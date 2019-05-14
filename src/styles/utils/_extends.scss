@@ -1,4 +1,20 @@
-%h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+//%h1 {
+//  font-family: $Avenir;  @extend %flex-between;
+//  font-size: 36px;
+//  line-height: 42px;
+//}
+
+%size16-line19 {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+%size14-line16 {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+%flex-between {
+  display: flex;
+  justify-content: space-between;
 }

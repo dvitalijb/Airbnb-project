@@ -2,6 +2,331 @@
 @import "fonts";
 @import "typography";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background: $c-gray;
+  margin: auto;
+  height: 2117px;
+  max-width: 2000px;
+  background-color: #e5e5e5;
+
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 524px;
+  display: flex;
+  flex-direction: column;
+
+  .wrapperNav {
+    height: 60px;
+    padding: 15px 15px 15px 26px;
+    display: flex;
+    justify-content: space-between;
+
+    .wrapperLink {
+      width: 373px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .imgAvatar {
+        border-radius: 50%;
+        width: 30px;
+      }
+    }
+
+    .imgLogo {
+      width: 40px;
+      height: 30px;
+    }
+
+    a {
+      font-family: "Avenir-Heavy", sans-serif;
+      font-size: 16px;
+      line-height: 19px;
+      color: #3d4e61;
+    }
+  }
+
+  .imgKitchen {
+    height: 464px;
+  }
+}
+
+main {
+  max-width: 900px;
+  margin: 40px auto 75px;
+  display: flex;
+  justify-content: space-between;
+
+  .wrapperInformation {
+    max-width: 482px;
+
+    .wrapperAbout {
+      margin-bottom: 66px;
+
+      .headerAbout {
+        font-family: "Avenir-Heavy", sans-serif;
+        font-size: 36px;
+        line-height: 42px;
+        color: #3d4e61;
+        margin-bottom: 10px;
+      }
+
+      span {
+        font-family: "Avenir-Book", sans-serif;
+        font-size: 16px;
+        line-height: 19px;
+        color: #687c94;
+      }
+
+      ul {
+        display: grid;
+        grid-template-columns: repeat(3, 82px);
+        margin-bottom: 28px;
+        margin-top: 15px;
+
+        li {
+          font-family: "Avenir-Book", sans-serif;
+          font-size: 16px;
+          line-height: 19px;
+          color: #3d4e61;
+          height: 28px;
+        }
+      }
+
+      article {
+        height: 120px;
+        font-family: "Avenir-Book", sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        color: #3d4e61;
+        margin-bottom: 5px;
+      }
+
+      .linkContacts {
+        font-family: "Avenir-Heavy", sans-serif;
+        font-size: 16px;
+        line-height: 19px;
+        color: #3d4e61;
+      }
+
+      h3 {
+        font-family: "Avenir-Heavy", sans-serif;
+        font-size: 20px;
+        line-height: 23px;
+        color: #3d4e61;
+        margin-top: 44px;
+        margin-bottom: 21px;
+      }
+
+      .wrapperAmenities {
+        display: grid;
+        grid: repeat(2, 28px) / repeat(2, 177px);
+        grid-auto-flow: row;
+        grid-gap: 13px 20px;
+        margin-bottom: 13px;
+
+        p {
+          font-family: "Avenir-Book", sans-serif;
+          font-size: 16px;
+          line-height: 19px;
+          color: #3d4e61;
+        }
+      }
+
+      .linkAmenities {
+        font-family: "Avenir-Book", sans-serif;
+        font-size: 16px;
+        line-height: 19px;
+        color: #3d4e61;
+      }
+    }
+
+    .wrapperFeedback {
+      h2 {
+        font-family: "Avenir-Heavy", sans-serif;
+        font-size: 28px;
+        line-height: 33px;
+        color: #3d4e61;
+        margin-bottom: 34px;
+      }
+
+      .wrapperUserF {
+        .wrapperDetails {
+          display: flex;
+          margin-bottom: 13px;
+
+          .avatar {
+            width: 50px;
+            height: 50px;
+            background-color: #c4c4c4;
+            border-radius: 50%;
+            margin-right: 21px;
+          }
+
+          .wrapperNameDate {
+            font-family: "Avenir-Heavy", sans-serif;
+            font-size: 20px;
+            line-height: 23px;
+            color: #3d4e61;
+            margin-bottom: 12px;
+
+            .dateOfPost {
+              font-family: "Avenir-Book", sans-serif;
+              font-size: 14px;
+              line-height: 16px;
+              color: #3d4e61;
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+
+      .text {
+        font-family: "Avenir-Book", sans-serif;
+        font-size: 16px;
+        line-height: 19px;
+        color: #3d4e61;
+        height: 120px;
+      }
+    }
+
+    .author {
+      .headerAuthor {
+        font-family: "Roboto-Bold", sans-serif;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 33px;
+        color: #3d4e61;
+        margin-bottom: 11px;
+      }
+
+      .country {
+        font-family: "Avenir-Book", sans-serif;
+        font-size: 14px;
+        line-height: 16px;
+        color: #3d4e61;
+      }
+
+      .text {
+        font-family: "Avenir-Book", sans-serif;
+        font-size: 16px;
+        line-height: 19px;
+        color: #3d4e61;
+        margin-top: 20px;
+        margin-bottom: 25px;
+      }
+
+      input {
+        width: 150px;
+        height: 50px;
+        border: 1px solid $ContactButton;
+        border-radius: 5px;
+        font-family: "Avenir-Heavy", sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+        color: $ContactButton;
+      }
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    height: 319px;
+    background: $white-color;
+    border: 1px solid #e1e7ed;
+    border-radius: 3px;
+    padding: 30px 30px 38px;
+
+    .headerForm {
+      font-family: "Avenir-Book", sans-serif;
+      font-size: 16px;
+      line-height: 19px;
+      color: #3d4e61;
+      margin-bottom: 39px;
+    }
+
+    input[type="date"],
+    input[type="text"] {
+      width: 100%;
+      height: 50px;
+      border: 1px solid $borderForm;
+      border-radius: 3px;
+      padding: 14px 17px;
+      font-family: "Avenir-Book", sans-serif;
+      font-size: 16px;
+      line-height: 19px;
+      color: #3d4e61;
+    }
+
+    input[type="date"] {
+      margin-bottom: 16px;
+    }
+
+    input[type="button"] {
+      height: 50px;
+      text-align: center;
+      padding: 15px 0;
+      color: #fff;
+      font-family: "Avenir-Book", sans-serif;
+      font-size: 16px;
+      line-height: 19px;
+      background-color: #fd5c63;
+      border-radius: 4px;
+      border: none;
+      margin-top: 24px;
+    }
+  }
+}
+
+footer {
+  height: 213px;
+  width: 100%;
+  box-shadow: 0 -1px 0;
+  padding: 44px;
+
+  nav {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 108px 175px 154px;
+    justify-content: space-between;
+  }
+
+  h4 {
+    font-family: "Avenir-Heavy", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #3d4e61;
+    margin-bottom: 20px;
+  }
+
+  .linkFooter {
+    display: inline-block;
+    font-family: "Avenir-Book", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3d4e61;
+    margin-bottom: 10px;
+  }
 }

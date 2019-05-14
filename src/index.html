@@ -1,13 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.css">
-  </head>
-  <body>
-    <img src="./images/logo.svg" alt="Logo">
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+<header>
+  <nav class="wrapperNav">
+    <a href="#">
+      <img class="imgLogo" src="images/logo.png" alt="logo">
+    </a>
+    <ul class="wrapperLink">
+      <li><a href="#">Become a host</a></li>
+      <li><a href="#">Trips</a></li>
+      <li><a href="#">Messages</a></li>
+      <li><a href="#">
+        <img class="imgAvatar" src="images/avatar.jpg" alt="avatar">
+      </a></li>
+    </ul>
+  </nav>
+  <img class="imgKitchen" src="images/kitchen.jpg" alt="kitchen">
+</header>
+<main>
+  <section class="wrapperInformation">
+    <section class="wrapperAbout">
+      <h1 class="headerAbout">Quiet apartment</h1>
+      <span>Entire apartment</span>
+      <ul>
+        <li><p>4 guests</p></li>
+        <li><p>1 bed</p></li>
+        <li><p>1 bath</p></li>
+      </ul>
+      <article>City Apartment is newly renovated in the heart of Budapest, right
+        in
+        the city center. Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam.
+      </article>
+      <a class="linkContacts" href="#">Contact host</a>
+      <h3>Amenities</h3>
+      <section class="wrapperAmenities">
+        <p>Elevator</p>
+        <p>Hair dryer</p>
+        <p>Washer</p>
+        <p>Kitchen</p>
+      </section>
+      <a class="linkAmenities" href="#">Show All Amenities</a>
+    </section>
+    <section class="wrapperFeedback">
+      <h2>Reviews</h2>
+      <section class="wrapperUserF">
+        <section class="wrapperDetails">
+          <div class="avatar"></div>
+          <section class="wrapperNameDate">
+            <p>John</p>
+            <p class="dateOfPost">September 2016</p>
+          </section>
+        </section>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam.</p>
+      </section>
+    </section>
+    <section class="wrapperFeedback">
+      <h2>Reviews</h2>
+      <section class="wrapperUserF">
+        <section class="wrapperDetails">
+          <div class="avatar"></div>
+          <section class="wrapperNameDate">
+            <p>John</p>
+            <p class="dateOfPost">September 2016</p>
+          </section>
+        </section>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam.</p>
+      </section>
+    </section>
+    <section class="author">
+      <h2 class="headerAuthor">Hosted by Jane</h2>
+      <span class="country">Budapest, Hungary</span>
+      <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+      do eiusmod tempor incididunt ut labore et dolore magna
+      aliqua.</p>
+      <input type="button" value="Contact Host">
+    </section>
+  </section>
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+    <p class="headerForm">25$ per night</p>
+    <input type="date" name="date" required placeholder="Date">
+    <input type="text" name="name" autocomplete="off" required placeholder="Guests">
+    <input type="button" value="Book">
+  </form>
+</main>
+<footer>
+  <nav>
+    <section>
+      <h4>Airbnb</h4>
+      <ul>
+        <li><a class="linkFooter" href="#">about</a></li>
+        <li><a class="linkFooter" href="#">Press</a></li>
+        <li><a class="linkFooter" href="#">Help</a></li>
+      </ul>
+    </section>
+    <section>
+      <h4>Discover</h4>
+      <ul>
+        <li><a class="linkFooter" href="#">Travel credit</a></li>
+        <li><a class="linkFooter" href="#">Business</a></li>
+        <li><a class="linkFooter" href="#">Guidebooks</a></li>
+      </ul>
+    </section>
+    <section>
+      <h4>Hosting</h4>
+      <ul>
+        <li><a class="linkFooter" href="#">Why host</a></li>
+        <li><a class="linkFooter" href="#">Hospitality</a></li>
+        <li><a class="linkFooter" href="#">Community</a></li>
+      </ul>
+    </section>
+  </nav>
+</footer>
+
+<script type="text/javascript" src="scripts/main.js"></script>
+</body>
 </html>
